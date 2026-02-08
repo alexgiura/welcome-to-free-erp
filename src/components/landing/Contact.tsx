@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Send } from "lucide-react";
+import { Phone, Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
@@ -61,41 +61,69 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
-        <div className="max-w-xl mx-auto">
-          {/* Section Header */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          {/* Left side - Title & Contact Info */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-10"
           >
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Contact</span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold mt-3 mb-4">
-              Hai să <span className="text-gradient">Vorbim</span>
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+              Contact
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">
+              Ia legătura<br />cu noi
             </h2>
-            
-            {/* Phone number */}
-            <motion.a
-              href="tel:+40123456789"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 text-lg font-semibold text-accent hover:text-accent/80 transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              +40 123 456 789
-            </motion.a>
+            <p className="text-muted-foreground text-lg mb-10 max-w-md">
+              Ai întrebări sau vrei să discutăm despre nevoile tale? Suntem aici să te ajutăm.
+            </p>
+
+            {/* Contact details */}
+            <div className="space-y-6">
+              <motion.a
+                href="mailto:contact@bilderp.ro"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="flex items-center gap-4 group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <Mail className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Email</p>
+                  <p className="font-semibold text-foreground group-hover:text-accent transition-colors">contact@bilderp.ro</p>
+                </div>
+              </motion.a>
+
+              <motion.a
+                href="tel:+40123456789"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="flex items-center gap-4 group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <Phone className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Telefon</p>
+                  <p className="font-semibold text-foreground group-hover:text-accent transition-colors">+40 123 456 789</p>
+                </div>
+              </motion.a>
+            </div>
           </motion.div>
 
-          {/* Contact Form */}
+          {/* Right side - Contact Form */}
           <motion.form
             onSubmit={handleSubmit}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="bg-card rounded-2xl p-6 md:p-8 shadow-card border border-border"
@@ -103,7 +131,7 @@ const Contact = () => {
             <div className="space-y-5">
               <div>
                 <Label htmlFor="name" className="text-foreground font-medium">
-                  Nume
+                  Nume complet
                 </Label>
                 <Input
                   id="name"
@@ -141,7 +169,7 @@ const Contact = () => {
                   id="message"
                   name="message"
                   placeholder="Scrie mesajul tău aici..."
-                  rows={4}
+                  rows={5}
                   value={formData.message}
                   onChange={handleChange}
                   className={`mt-1.5 resize-none ${errors.message ? 'border-destructive' : ''}`}
