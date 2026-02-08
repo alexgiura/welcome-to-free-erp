@@ -1,6 +1,7 @@
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Features from "@/components/landing/Features";
+import CustomDevelopment from "@/components/landing/CustomDevelopment";
 import FreeBanner from "@/components/landing/FreeBanner";
 import Footer from "@/components/landing/Footer";
 
@@ -11,6 +12,7 @@ const Index = () => {
       <main>
         <Hero />
         <Features />
+        <CustomDevelopment />
         <FreeBanner />
       </main>
       <Footer />
