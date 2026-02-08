@@ -58,19 +58,16 @@ const Hero = () => {
               ))}
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Button */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex justify-center lg:justify-start"
             >
               <Button variant="free" size="xl" className="gap-2">
                 Get Started Free
                 <ArrowRight className="w-5 h-5" />
-              </Button>
-              <Button variant="heroOutline" size="xl">
-                Watch Demo
               </Button>
             </motion.div>
           </motion.div>
