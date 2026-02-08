@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, Send } from "lucide-react";
+import { Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left side - Title & Contact Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -76,38 +76,23 @@ const Contact = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">
               Ia legătura<br />cu noi
             </h2>
-            <p className="text-muted-foreground text-lg mb-10 max-w-md">
+            <p className="text-muted-foreground text-lg mb-8 max-w-md">
               Ai întrebări sau vrei să discutăm despre nevoile tale? Suntem aici să te ajutăm.
             </p>
 
             {/* Contact details */}
-            <div className="space-y-5">
-              <a
-                href="mailto:contact@bilderp.ro"
-                className="flex items-center gap-4 group"
-              >
-                <div className="w-11 h-11 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                  <Mail className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-medium text-foreground group-hover:text-accent transition-colors">contact@bilderp.ro</p>
-                </div>
-              </a>
-
-              <a
-                href="tel:+40123456789"
-                className="flex items-center gap-4 group"
-              >
-                <div className="w-11 h-11 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                  <Phone className="w-5 h-5 text-accent" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Telefon</p>
-                  <p className="font-medium text-foreground group-hover:text-accent transition-colors">+40 123 456 789</p>
-                </div>
-              </a>
-            </div>
+            <a
+              href="tel:+40123456789"
+              className="inline-flex items-center gap-4 group"
+            >
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <Phone className="w-5 h-5 text-accent" />
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Telefon</p>
+                <p className="font-medium text-foreground group-hover:text-accent transition-colors">+40 123 456 789</p>
+              </div>
+            </a>
           </motion.div>
 
           {/* Right side - Contact Form */}
