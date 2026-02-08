@@ -17,9 +17,9 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-xl gradient-hero flex items-center justify-center">
-            <span className="text-primary-foreground font-display font-bold text-xl">E</span>
+            <span className="text-primary-foreground font-display font-bold text-xl">B</span>
           </div>
-          <span className="font-display font-bold text-xl text-foreground">FlowERP</span>
+          <span className="font-display font-bold text-xl text-foreground">Bilderp</span>
           <span className="ml-2 px-2 py-0.5 rounded-full gradient-free text-xs font-semibold text-accent-foreground">
             FREE
           </span>
