@@ -30,7 +30,7 @@ const Logo = ({ showBadge = false, size = "md" }: LogoProps) => {
       />
       <span className={`font-display font-bold ${sizeClasses[size].text}`}>
         <span className="text-foreground">Bild</span>
-        <span className="text-primary">erp</span>
+        <span className="text-secondary">erp</span>
       </span>
       {showBadge && (
         <span className="ml-2 px-2 py-0.5 rounded-full gradient-free text-xs font-semibold text-accent-foreground">
