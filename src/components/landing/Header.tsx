@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Logo from "@/components/Logo";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,15 +16,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl gradient-hero flex items-center justify-center">
-            <span className="text-primary-foreground font-display font-bold text-xl">B</span>
-          </div>
-          <span className="font-display font-bold text-xl text-foreground">Bilderp</span>
-          <span className="ml-2 px-2 py-0.5 rounded-full gradient-free text-xs font-semibold text-accent-foreground">
-            GRATUIT
-          </span>
-        </div>
+        <Logo showBadge={true} />
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">

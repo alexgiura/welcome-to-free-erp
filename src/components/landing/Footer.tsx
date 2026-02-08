@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Logo from "@/components/Logo";
 
 const Footer = () => {
   return (
@@ -12,11 +13,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo & Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl gradient-hero flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-xl">B</span>
-              </div>
-              <span className="font-display font-bold text-xl">Bilderp</span>
+            <div className="mb-4">
+              <Logo />
             </div>
             <p className="text-muted-foreground max-w-md">
               Soluția ERP gratuită și open-source concepută pentru a ajuta afacerile 
