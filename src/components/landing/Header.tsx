@@ -33,8 +33,8 @@ const Header = () => {
           <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
             Prețuri
           </a>
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-            Despre
+          <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            Contact
           </a>
         </nav>
 
@@ -72,8 +72,8 @@ const Header = () => {
             <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors py-2">
               Prețuri
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              Despre
+            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors py-2">
+              Contact
             </a>
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
               <Button variant="outline" size="lg" className="w-full">
