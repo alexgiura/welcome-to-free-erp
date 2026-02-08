@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Send } from "lucide-react";
+import { Phone, Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
@@ -74,25 +74,40 @@ const Contact = () => {
               Contact
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">
-              Ia legătura<br />cu noi
+              Ia legătura cu noi
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-md">
               Ai întrebări sau vrei să discutăm despre nevoile tale? Suntem aici să te ajutăm.
             </p>
 
             {/* Contact details */}
-            <a
-              href="tel:+40123456789"
-              className="inline-flex items-center gap-4 group"
-            >
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                <Phone className="w-5 h-5 text-accent" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Telefon</p>
-                <p className="font-medium text-foreground group-hover:text-accent transition-colors">+40 123 456 789</p>
-              </div>
-            </a>
+            <div className="space-y-4">
+              <a
+                href="mailto:contact@bilderp.ro"
+                className="flex items-center gap-4 group"
+              >
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <Mail className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Email</p>
+                  <p className="font-medium text-foreground group-hover:text-accent transition-colors">contact@bilderp.ro</p>
+                </div>
+              </a>
+
+              <a
+                href="tel:+40123456789"
+                className="flex items-center gap-4 group"
+              >
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <Phone className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Telefon</p>
+                  <p className="font-medium text-foreground group-hover:text-accent transition-colors">+40 123 456 789</p>
+                </div>
+              </a>
+            </div>
           </motion.div>
 
           {/* Right side - Contact Form */}
