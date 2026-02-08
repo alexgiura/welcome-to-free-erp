@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
-import heroIllustration from "@/assets/hero-illustration.png";
+import HeroIllustration from "./HeroIllustration";
 
 const Hero = () => {
   return (
@@ -79,15 +79,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative z-10 animate-float">
-              <img
-                src={heroIllustration}
-                alt="Ilustrație Sistem ERP"
-                className="w-full max-w-lg mx-auto"
-              />
-            </div>
-            {/* Glow effect */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primary/20 rounded-full blur-3xl -z-10" />
+            <HeroIllustration />
           </motion.div>
         </div>
       </div>
