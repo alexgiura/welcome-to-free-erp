@@ -3,6 +3,7 @@ import Hero from "@/components/landing/Hero";
 import Features from "@/components/landing/Features";
 import CustomDevelopment from "@/components/landing/CustomDevelopment";
 import FreeBanner from "@/components/landing/FreeBanner";
+import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
@@ -14,6 +15,7 @@ const Index = () => {
         <Features />
         <FreeBanner />
         <CustomDevelopment />
+        <Contact />
       </main>
       <Footer />
     </div>
