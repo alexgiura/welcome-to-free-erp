@@ -14,27 +14,27 @@ const CustomDevelopment = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-              Customization
+              Personalizare
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold mt-3 mb-6">
-              Need Something <span className="text-gradient">Unique?</span>
+              Ai nevoie de ceva <span className="text-gradient">Unic?</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-6">
-              Our ERP is fully customizable to match your unique business workflows. 
-              Whether you need specific modules, integrations, or completely new features — 
-              we've got you covered.
+              ERP-ul nostru este complet personalizabil pentru a se potrivi fluxurilor tale unice de lucru. 
+              Fie că ai nevoie de module specifice, integrări sau funcționalități complet noi — 
+              te avem acoperit.
             </p>
             <p className="text-muted-foreground mb-8">
-              The base application is <span className="font-semibold text-accent">100% free</span>. 
-              The only cost? Custom development when you need it.
+              Aplicația de bază este <span className="font-semibold text-accent">100% gratuită</span>. 
+              Singurul cost? Dezvoltarea personalizată când ai nevoie de ea.
             </p>
 
             {/* Features list */}
             <div className="space-y-4">
               {[
-                { icon: Puzzle, text: "Modular architecture — add only what you need" },
-                { icon: Wrench, text: "Custom integrations with your existing tools" },
-                { icon: Code2, text: "Tailored features built for your workflow" },
+                { icon: Puzzle, text: "Arhitectură modulară — adaugă doar ce ai nevoie" },
+                { icon: Wrench, text: "Integrări personalizate cu instrumentele tale existente" },
+                { icon: Code2, text: "Funcționalități adaptate pentru fluxul tău de lucru" },
               ].map((item, index) => (
                 <motion.div
                   key={item.text}
@@ -71,31 +71,31 @@ const CustomDevelopment = () => {
                     <Clock className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Development Rate</p>
-                    <p className="font-display text-2xl font-bold">Custom Work</p>
+                    <p className="text-sm text-muted-foreground">Tarif Dezvoltare</p>
+                    <p className="font-display text-2xl font-bold">Lucru Personalizat</p>
                   </div>
                 </div>
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-2">
-                    <span className="font-display text-5xl md:text-6xl font-bold text-gradient">$30</span>
-                    <span className="text-muted-foreground text-xl">/hour</span>
+                    <span className="font-display text-5xl md:text-6xl font-bold text-gradient">30€</span>
+                    <span className="text-muted-foreground text-xl">/oră</span>
                   </div>
                   <p className="text-muted-foreground mt-2">
-                    Only when you request custom features
+                    Doar când soliciți funcționalități personalizate
                   </p>
                 </div>
 
                 <div className="h-px bg-border my-6" />
 
                 <div className="space-y-3">
-                  <p className="font-semibold text-foreground mb-4">What's included:</p>
+                  <p className="font-semibold text-foreground mb-4">Ce este inclus:</p>
                   {[
-                    "Custom module development",
-                    "Third-party integrations",
-                    "UI/UX customizations",
-                    "Priority support during development",
-                    "Code ownership — it's yours",
+                    "Dezvoltare module personalizate",
+                    "Integrări cu terți",
+                    "Personalizări UI/UX",
+                    "Suport prioritar în timpul dezvoltării",
+                    "Proprietatea codului — e al tău",
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center">
@@ -107,7 +107,7 @@ const CustomDevelopment = () => {
                 </div>
 
                 <p className="text-sm text-muted-foreground mt-6 pt-6 border-t border-border">
-                  💡 No monthly fees, no subscriptions — pay only for development hours when you need custom work.
+                  💡 Fără taxe lunare, fără abonamente — plătești doar pentru orele de dezvoltare când ai nevoie de lucru personalizat.
                 </p>
               </div>
             </div>

@@ -4,12 +4,12 @@ import { Gift, ArrowRight, Check } from "lucide-react";
 
 const FreeBanner = () => {
   const benefits = [
-    "No hidden fees ever",
-    "All features included",
-    "Unlimited team members",
-    "24/7 community support",
-    "Regular updates",
-    "Data export anytime",
+    "Fără taxe ascunse",
+    "Toate funcționalitățile incluse",
+    "Membri de echipă nelimitați",
+    "Suport comunitate 24/7",
+    "Actualizări regulate",
+    "Export date oricând",
   ];
 
   return (
@@ -32,22 +32,22 @@ const FreeBanner = () => {
               <div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 mb-6">
                   <Gift className="w-5 h-5 text-accent" />
-                  <span className="font-semibold text-accent">Free Forever</span>
+                  <span className="font-semibold text-accent">Gratuit pentru Totdeauna</span>
                 </div>
 
                 <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
-                  Why Pay When It's{" "}
-                  <span className="text-gradient-free">Free?</span>
+                  De ce să Plătești când e{" "}
+                  <span className="text-gradient-free">Gratuit?</span>
                 </h2>
 
                 <p className="text-primary-foreground/70 text-lg mb-8 max-w-lg">
-                  We believe powerful business tools shouldn't cost a fortune. 
-                  FlowERP is 100% free, forever — no trial periods, no credit cards, 
-                  no surprises.
+                  Credem că instrumentele puternice de business nu ar trebui să coste o avere. 
+                  Bilderp este 100% gratuit, pentru totdeauna — fără perioade de probă, fără carduri de credit, 
+                  fără surprize.
                 </p>
 
                 <Button variant="free" size="xl" className="gap-2">
-                  Start Now — It's Free
+                  Începe Acum — E Gratuit
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </div>

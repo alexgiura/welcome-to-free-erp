@@ -21,30 +21,30 @@ const Header = () => {
           </div>
           <span className="font-display font-bold text-xl text-foreground">Bilderp</span>
           <span className="ml-2 px-2 py-0.5 rounded-full gradient-free text-xs font-semibold text-accent-foreground">
-            FREE
+            GRATUIT
           </span>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
-            Features
+            Funcționalități
           </a>
           <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-            Pricing
+            Prețuri
           </a>
           <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-            About
+            Despre
           </a>
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Button variant="ghost" size="lg">
-            Log In
+            Autentificare
           </Button>
           <Button variant="hero" size="lg">
-            Sign Up Free
+            Înregistrare Gratuită
           </Button>
         </div>
 
@@ -67,20 +67,20 @@ const Header = () => {
         >
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              Features
+              Funcționalități
             </a>
             <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              Pricing
+              Prețuri
             </a>
             <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              About
+              Despre
             </a>
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
               <Button variant="outline" size="lg" className="w-full">
-                Log In
+                Autentificare
               </Button>
               <Button variant="hero" size="lg" className="w-full">
-                Sign Up Free
+                Înregistrare Gratuită
               </Button>
             </div>
           </div>
