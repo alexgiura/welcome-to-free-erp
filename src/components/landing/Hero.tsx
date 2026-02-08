@@ -29,22 +29,22 @@ const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-6"
             >
               <Sparkles className="w-4 h-4 text-accent" />
-              <span className="text-sm font-semibold text-accent">100% Free Forever</span>
+              <span className="text-sm font-semibold text-accent">100% Gratuit pentru Totdeauna</span>
             </motion.div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Manage Your Business{" "}
-              <span className="text-gradient">Smarter</span>, Not Harder
+              Gestionează-ți Afacerea{" "}
+              <span className="text-gradient">Mai Inteligent</span>, Nu Mai Greu
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              The complete ERP solution that grows with you. From inventory to accounting, 
-              streamline every aspect of your operations — absolutely free.
+              Soluția ERP completă care crește odată cu tine. De la inventar la contabilitate, 
+              eficientizează fiecare aspect al operațiunilor tale — complet gratuit.
             </p>
 
             {/* Benefits */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
-              {["No credit card required", "Unlimited users", "Cloud-based"].map((benefit, i) => (
+              {["Fără card de credit", "Utilizatori nelimitați", "Bazat pe cloud"].map((benefit, i) => (
                 <motion.div
                   key={benefit}
                   initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ const Hero = () => {
               className="flex justify-center lg:justify-start"
             >
               <Button variant="free" size="xl" className="gap-2">
-                Get Started Free
+                Începe Gratuit
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </motion.div>
@@ -82,7 +82,7 @@ const Hero = () => {
             <div className="relative z-10 animate-float">
               <img
                 src={heroIllustration}
-                alt="ERP System Illustration"
+                alt="Ilustrație Sistem ERP"
                 className="w-full max-w-lg mx-auto"
               />
             </div>

@@ -19,29 +19,29 @@ const Footer = () => {
               <span className="font-display font-bold text-xl">Bilderp</span>
             </div>
             <p className="text-muted-foreground max-w-md">
-              The free, open-source ERP solution designed to help businesses 
-              of all sizes manage their operations efficiently.
+              Soluția ERP gratuită și open-source concepută pentru a ajuta afacerile 
+              de toate dimensiunile să-și gestioneze operațiunile eficient.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
+            <h4 className="font-semibold mb-4">Produs</h4>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a></li>
-              <li><a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Documentation</a></li>
+              <li><a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Funcționalități</a></li>
+              <li><a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Prețuri</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Documentație</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">API</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Companie</h4>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a></li>
+              <li><a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">Despre</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Support</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Suport</a></li>
             </ul>
           </div>
         </div>
@@ -49,11 +49,11 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Bilderp. All rights reserved.
+            © {new Date().getFullYear()} Bilderp. Toate drepturile rezervate.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Politica de Confidențialitate</a>
+            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Termeni și Condiții</a>
           </div>
         </div>
       </div>

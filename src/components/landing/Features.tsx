@@ -11,33 +11,33 @@ import {
 const features = [
   {
     icon: Package,
-    title: "Inventory Management",
-    description: "Track stock levels, automate reorders, and manage multiple warehouses with ease.",
+    title: "Gestiune Inventar",
+    description: "Urmărește nivelurile stocurilor, automatizează reaprovizionarea și gestionează mai multe depozite cu ușurință.",
   },
   {
     icon: BarChart3,
-    title: "Financial Reports",
-    description: "Generate comprehensive financial reports and gain insights into your business performance.",
+    title: "Rapoarte Financiare",
+    description: "Generează rapoarte financiare complete și obține informații despre performanța afacerii tale.",
   },
   {
     icon: Users,
-    title: "HR & Payroll",
-    description: "Manage employees, track attendance, and automate payroll processing seamlessly.",
+    title: "HR & Salarizare",
+    description: "Gestionează angajații, urmărește prezența și automatizează procesarea salariilor fără efort.",
   },
   {
     icon: FileText,
-    title: "Invoicing",
-    description: "Create professional invoices, track payments, and manage your accounts receivable.",
+    title: "Facturare",
+    description: "Creează facturi profesionale, urmărește plățile și gestionează conturile de încasat.",
   },
   {
     icon: ShoppingCart,
-    title: "Sales & CRM",
-    description: "Manage leads, track opportunities, and close deals faster with integrated CRM.",
+    title: "Vânzări & CRM",
+    description: "Gestionează lead-uri, urmărește oportunități și închide vânzări mai rapid cu CRM integrat.",
   },
   {
     icon: Settings,
-    title: "Customizable",
-    description: "Adapt the system to your unique workflows with flexible customization options.",
+    title: "Personalizabil",
+    description: "Adaptează sistemul la fluxurile tale de lucru unice cu opțiuni flexibile de personalizare.",
   },
 ];
 
@@ -53,13 +53,13 @@ const Features = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Features</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Funcționalități</span>
           <h2 className="font-display text-3xl md:text-4xl font-bold mt-3 mb-4">
-            Everything You Need to <span className="text-gradient">Succeed</span>
+            Tot ce ai nevoie pentru a <span className="text-gradient">Reuși</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From small startups to growing enterprises, our comprehensive ERP solution 
-            provides all the tools you need — completely free.
+            De la startup-uri mici la întreprinderi în creștere, soluția noastră ERP completă 
+            oferă toate instrumentele de care ai nevoie — complet gratuit.
           </p>
         </motion.div>
 
