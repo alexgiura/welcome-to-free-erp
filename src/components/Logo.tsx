@@ -22,7 +22,7 @@ const Logo = ({ showBadge = false, size = "md" }: LogoProps) => {
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-1">
       <img 
         src={logoIcon} 
         alt="Bilderp Logo" 
