@@ -27,14 +27,14 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
+          <a href="#hero" className="text-muted-foreground hover:text-foreground transition-colors">
+            Despre
+          </a>
           <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
             Funcționalități
           </a>
           <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
             Prețuri
-          </a>
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-            Despre
           </a>
           <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
             Contact
@@ -69,14 +69,14 @@ const Header = () => {
           className="md:hidden bg-background border-b border-border"
         >
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+            <a href="#hero" className="text-muted-foreground hover:text-foreground transition-colors py-2">
+              Despre
+            </a>
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors py-2">
               Funcționalități
             </a>
             <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors py-2">
               Prețuri
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-              Despre
             </a>
             <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors py-2">
               Contact
