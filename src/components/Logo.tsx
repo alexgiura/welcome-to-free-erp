@@ -8,15 +8,15 @@ interface LogoProps {
 const Logo = ({ showBadge = false, size = "md" }: LogoProps) => {
   const sizeClasses = {
     sm: {
-      icon: "h-8 w-8",
+      icon: "h-5",
       text: "text-xl",
     },
     md: {
-      icon: "h-10 w-10",
+      icon: "h-6",
       text: "text-2xl",
     },
     lg: {
-      icon: "h-12 w-12",
+      icon: "h-7",
       text: "text-3xl",
     },
   };
