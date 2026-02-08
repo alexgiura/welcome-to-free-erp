@@ -61,90 +61,88 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left side - Contact Form */}
           <motion.form
             onSubmit={handleSubmit}
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-card rounded-2xl p-6 md:p-8 shadow-card border border-border"
+            className="space-y-5"
           >
-            <div className="space-y-5">
-              <div>
-                <Label htmlFor="name" className="text-foreground font-medium">
-                  Nume complet
-                </Label>
-                <Input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Ion Popescu"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className={`mt-1.5 ${errors.name ? 'border-destructive' : ''}`}
-                />
-                {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
-              </div>
-
-              <div>
-                <Label htmlFor="email" className="text-foreground font-medium">
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="ion@exemplu.ro"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className={`mt-1.5 ${errors.email ? 'border-destructive' : ''}`}
-                />
-                {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
-              </div>
-
-              <div>
-                <Label htmlFor="message" className="text-foreground font-medium">
-                  Mesaj
-                </Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  placeholder="Scrie mesajul tău aici..."
-                  rows={5}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className={`mt-1.5 resize-none ${errors.message ? 'border-destructive' : ''}`}
-                />
-                {errors.message && <p className="text-destructive text-sm mt-1">{errors.message}</p>}
-              </div>
-
-              <Button 
-                type="submit" 
-                variant="free" 
-                size="lg" 
-                className="w-full gap-2"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? (
-                  "Se trimite..."
-                ) : (
-                  <>
-                    Trimite Mesajul
-                    <Send className="w-4 h-4" />
-                  </>
-                )}
-              </Button>
+            <div>
+              <Label htmlFor="name" className="text-foreground font-medium">
+                Nume complet
+              </Label>
+              <Input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Ion Popescu"
+                value={formData.name}
+                onChange={handleChange}
+                className={`mt-1.5 bg-background ${errors.name ? 'border-destructive' : ''}`}
+              />
+              {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
             </div>
+
+            <div>
+              <Label htmlFor="email" className="text-foreground font-medium">
+                Email
+              </Label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="ion@exemplu.ro"
+                value={formData.email}
+                onChange={handleChange}
+                className={`mt-1.5 bg-background ${errors.email ? 'border-destructive' : ''}`}
+              />
+              {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
+            </div>
+
+            <div>
+              <Label htmlFor="message" className="text-foreground font-medium">
+                Mesaj
+              </Label>
+              <Textarea
+                id="message"
+                name="message"
+                placeholder="Scrie mesajul tău aici..."
+                rows={5}
+                value={formData.message}
+                onChange={handleChange}
+                className={`mt-1.5 resize-none bg-background ${errors.message ? 'border-destructive' : ''}`}
+              />
+              {errors.message && <p className="text-destructive text-sm mt-1">{errors.message}</p>}
+            </div>
+
+            <Button 
+              type="submit" 
+              variant="free" 
+              size="lg" 
+              className="w-full gap-2"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? (
+                "Se trimite..."
+              ) : (
+                <>
+                  Trimite Mesajul
+                  <Send className="w-4 h-4" />
+                </>
+              )}
+            </Button>
           </motion.form>
 
           {/* Right side - Title & Contact Info */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
@@ -159,40 +157,32 @@ const Contact = () => {
             </p>
 
             {/* Contact details */}
-            <div className="space-y-6">
-              <motion.a
+            <div className="space-y-5">
+              <a
                 href="mailto:contact@bilderp.ro"
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
                 className="flex items-center gap-4 group"
               >
-                <div className="w-12 h-12 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <div className="w-11 h-11 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <Mail className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-semibold text-foreground group-hover:text-accent transition-colors">contact@bilderp.ro</p>
+                  <p className="font-medium text-foreground group-hover:text-accent transition-colors">contact@bilderp.ro</p>
                 </div>
-              </motion.a>
+              </a>
 
-              <motion.a
+              <a
                 href="tel:+40123456789"
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
                 className="flex items-center gap-4 group"
               >
-                <div className="w-12 h-12 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <div className="w-11 h-11 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <Phone className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Telefon</p>
-                  <p className="font-semibold text-foreground group-hover:text-accent transition-colors">+40 123 456 789</p>
+                  <p className="font-medium text-foreground group-hover:text-accent transition-colors">+40 123 456 789</p>
                 </div>
-              </motion.a>
+              </a>
             </div>
           </motion.div>
         </div>
