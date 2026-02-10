@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left side - Title & Contact Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
