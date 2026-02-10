@@ -70,10 +70,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-sm font-semibold text-accent uppercase tracking-wider">
-              Contact
-            </span>
-            <h2 className="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">
+            <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
               Ia legătura cu noi
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-md">
