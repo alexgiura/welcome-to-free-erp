@@ -71,7 +71,7 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-              Ia legătura cu noi
+              Contactează-ne
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-md">
               Ai întrebări sau vrei să discutăm despre nevoile tale? Suntem aici să te ajutăm.
