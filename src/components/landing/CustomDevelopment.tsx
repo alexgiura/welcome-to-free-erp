@@ -30,7 +30,7 @@ const CustomDevelopment = () => {
             </p>
 
             {/* Features list */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               {[
                 { icon: Puzzle, text: "Arhitectură modulară — adaugă doar ce ai nevoie" },
                 { icon: Wrench, text: "Integrări personalizate cu instrumentele tale existente" },
