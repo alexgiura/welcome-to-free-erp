@@ -6,7 +6,7 @@ const FreeBanner = () => {
   const benefits = [
     "Fără taxe ascunse",
     "Toate funcționalitățile incluse",
-    "Membri de echipă nelimitați",
+    "Utilizatori nelimitați",
     "Suport comunitate 24/7",
     "Actualizări regulate",
     "Export date oricând",
