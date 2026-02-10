@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Wrench, Clock, Puzzle } from "lucide-react";
+import { Code2, Wrench, Clock, Puzzle, TrendingUp } from "lucide-react";
 
 const CustomDevelopment = () => {
   return (
@@ -35,6 +35,7 @@ const CustomDevelopment = () => {
                 { icon: Puzzle, text: "Arhitectură modulară — adaugă doar ce ai nevoie" },
                 { icon: Wrench, text: "Integrări personalizate cu instrumentele tale existente" },
                 { icon: Code2, text: "Funcționalități adaptate pentru fluxul tău de lucru" },
+                { icon: TrendingUp, text: "Scalabil pe măsură ce afacerea ta crește" },
               ].map((item, index) => (
                 <motion.div
                   key={item.text}
